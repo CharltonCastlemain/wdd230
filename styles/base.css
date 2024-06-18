@@ -58,11 +58,13 @@ p {
 }
 img {
   max-width: 100px;
-  padding: 30px;
   align-items: left;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+
 }
 span {
   font-size: 2.5em;
+  padding-left: 50px;
 }
 
 /* Flexbox styling for navigation */
