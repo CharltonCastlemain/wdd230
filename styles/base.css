@@ -28,27 +28,38 @@ main {
     background-color: var(--primary-color);
     color: var(--accent1-color);
     text-align: center;
-    font-size: 1.5em;
     margin-bottom: 10px;
 }
 .card ul {
     list-style-type: none;
     padding-left: 0;
 }
-header {
+header, footer {
     background-color: var(--primary-color);
     color: var(--accent1-color);
     text-align: center;
     padding: 10px 20px;
+    align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: bold;
+  padding: 20px 20px;
 }
 h1 {
     text-decoration: underline;
     text-align: center;
+    font-size: 1.5em;
 }
 p {
     text-align: center;
 }
-
+img {
+  max-width: 100px;
+  padding: 30px;
+}
 
 /* Flexbox styling for navigation */
 nav {
@@ -76,6 +87,8 @@ nav {
   }
   nav :hover {
     color: var(--primary-color);
+  }
+  li :hover {
     background-color: var(--accent3-color);
   }
 
