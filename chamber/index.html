@@ -12,15 +12,28 @@
     <meta property="og:image" content="https://www.tripsavvy.com/thmb/qqS7PZlMAYRgwgx8jCv-oP4Q6Cs=/3936x2624/filters:fill(auto,1)/TAM_0415-baaa0183446541aab8a0768776369a0e.jpg">
     <meta property="og:url" content="https://charltoncastlemain.github.io/wdd230/">
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css"> 
     <link rel="stylesheet" href="styles/larger.css">
-
     <link rel="icon" href="favicon.ico">
 
 </head>
 <body>
+    <header>
+        <img src="images/profile.jpg" alt="Charlton Castlemain">
+        <span>Charlton Castlemain</span>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero">
-        <img src="images/hero-image.jpg" alt="Fort Worth Night lights">
+        <img src="images/hero-image.jpg" id="hero-image" alt="Fort Worth Night lights">
         <h1>Welcome to the Chamber of Commerce</h1>
         <p>Your gateway to business success in our community.</p>
     </section>
@@ -74,7 +87,7 @@
         <div>Contact Information</div>
         <div>Additional development information:</div>
         <div>Charlton Castlemain</div>
-        <div>This is a project for WDD 230</div>
+        <div>WDD 230 Project</div>
         <div id="lastModified"></div> <!-- Dynamically set last modified date -->
     </footer>
 
