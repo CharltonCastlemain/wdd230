@@ -37,6 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 .hero-image {
     position: relative;
@@ -69,7 +70,7 @@ header {
 }
 
 .cta a {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 10px;
     border-radius: .5em;
     color: var(--secondary-color);
