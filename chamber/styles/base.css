@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #E4572E;
+    --primary-color: #6E2711;
     --secondary-color: #363020;
     --accent1-color: #5B8266;
     --accent2-color: #AEF6C7;
@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2 {
-    color: var(--primary-color); 
+    color: var(--accent3-color); 
     font-family: var(--heading-font);
 }
 
@@ -83,6 +83,9 @@ header {
     padding: 20px;
     background-color: var(--accent3-color);
     color: var(--secondary-color);
+}
+.events h2 {
+    color: var(--primary-color);
 }
 .event {
     border-radius: .5em;
