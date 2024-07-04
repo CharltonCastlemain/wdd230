@@ -1,5 +1,9 @@
-/* Larger Screens (Min-width: 650px) */
 @media only screen and (min-width: 650px) {
+    
+    #menu {
+        display: none;
+    }
+    
     body {
         padding: 20px;
     }
@@ -10,11 +14,12 @@
     }
 
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        padding: 10px 20px; 
         background-color: var(--nav-background-color);
-        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: -1;
     }
 
     header h1 {
@@ -23,34 +28,43 @@
     }
 
     nav {
-        flex-grow: 1;
-        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Ensure items are centered vertically */
+        background-color: var(--primary-color);
+        padding: 10px 0;
     }
 
     nav ul {
-        list-style-type: none;
+        display: flex;
         padding: 0;
-        margin: 0;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center; /* Ensure items are centered vertically */
     }
 
-    nav ul li {
-        display: inline;
-        margin-left: 20px;
+    nav li {
+        margin: 0 10px;
     }
 
-    nav ul li a {
+    nav a {
         text-decoration: none;
-        color: var(--nav-link-color);
-        transition: color 0.3s ease;
+        font-weight: bold;
+        color: var(--accent2-color);
+        font-family: var(--paragraph-font);
+        padding: 10px;
     }
 
-    nav ul li a:hover {
-        color: var(--nav-hover-link-color);
+    nav a:hover {
+        color: var(--primary-color);
     }
 
     .hero {
         display: flex;
+        flex-direction: column;
         height: 400px;
+        justify-content: center;
+        text-align:center;
     }
 
     .cta {
@@ -68,8 +82,32 @@
         width: auto;
         margin-top: 40px;
     }
+
     #hero-image {
         width: 90%;
         justify-content: center;
     }
+
+    .section-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .events, .weather, .spotlights {
+        flex: 1 1 calc(33% - 20px); 
+        margin-right: 20px; 
+        border-radius: .5em;
+    }
+
+    .spotlights {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .weather {
+        margin-right: 0;
+    }
+
+   
+   
 }
