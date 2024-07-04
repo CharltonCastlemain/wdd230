@@ -84,7 +84,7 @@ header {
     background-color: var(--accent3-color);
     color: var(--secondary-color);
 }
-.events h2 {
+.events h2, p {
     color: var(--primary-color);
 }
 .event {
@@ -96,7 +96,7 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
 }
-.weather h2 {
+.weather h3 {
     color: var(--accent2-color);
 }
 .weather p {
@@ -107,7 +107,7 @@ header {
     background-color: var(--accent1-color);
 }
 .spotlights p, h3 {
-    color: var(--secondary-color);
+    color: var(--accent3-color);
 }
 .footer {
     background-color: #333;
