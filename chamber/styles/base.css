@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #C33E09;
+    --primary-color: #E4572E;
     --secondary-color: #363020;
-    --accent1-color: #A49966;
-    --accent2-color: #C7C7A6;
-    --accent3-color: #EAFFDA;
+    --accent1-color: #5B8266;
+    --accent2-color: #AEF6C7;
+    --accent3-color: #E3D985;
 
     --heading-font: 'Grenze Gotisch', serif;
     --paragraph-font: 'Playfair Display', sans-serif;
@@ -59,6 +59,9 @@ header {
     padding: 60px 20px;
     text-align: center;
 }
+.hero p {
+    color: var(--accent2-color);
+}
 
 .cta {
     text-align: center;
@@ -71,7 +74,10 @@ header {
     border-radius: .5em;
     color: var(--secondary-color);
 }
-
+.cta a:hover {
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
 .events {
     padding: 20px;
     background-color: var(--accent3-color);
