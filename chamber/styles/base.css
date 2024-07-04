@@ -107,7 +107,7 @@ header {
     background-color: var(--accent1-color);
 }
 .spotlights p, h3 {
-    color: var(--accent3-color);
+    color: black;
 }
 .footer {
     background-color: #333;
