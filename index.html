@@ -40,11 +40,16 @@
     </nav>
 
     <main>
-        <picture>
-            <source src="week03/images/sd-night-mobile.webp" media="(max-width: 400px)">
-            <source src="week03/images/sd-night-desktop.webp" media="(min-width: 401px)">
-            <img src="week03/images/sd-night.webp" alt="San Diego Temple Night">
-        </picture>
+        <div class="hero-image">
+            <picture>
+                <source srcset="week03/images/sd-night-mobile.webp" media="(max-width: 400px)">
+                <source srcset="week03/images/sd-night-desktop.webp" media="(min-width: 401px)">
+                <img src="week03/images/sd-night.webp" alt="San Diego Temple Night">
+            </picture>
+            <div class="overlay">
+                <div class="overlay-text">⚙️ WDD: Absolute Position—Temple Hero.</div>
+            </div>
+        </div>
         <div id="mode">
             🕶️
         </div>
@@ -73,9 +78,11 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> Charlton Castlemain, MAGA Country</p>
         <p id="lastModified"></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.123456789012!2d-97.352392!3d32.977883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c268db9f9a76d%3A0x5e5708a5f429b8e5!2sHaslet%2C%20TX%2076108%2C%20USA!5e0!3m2!1sen!2suk!4v1626478912345!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageVisitsCounter.js"></script>
 </body>
 </html>
