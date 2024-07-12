@@ -69,4 +69,9 @@
 	#menu {
 		display: none;
 	}
+    iframe {
+        width: 70%;
+        height: 450px;
+        padding-bottom: 50px;
+    }
 }

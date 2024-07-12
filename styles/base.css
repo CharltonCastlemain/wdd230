@@ -183,3 +183,8 @@ li :hover {
 	font-size: 1.5rem;
 	font-family: var(--heading-font), serif;
 }
+
+iframe {
+  height: 250px;
+  width: 350px;
+}
