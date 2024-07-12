@@ -61,7 +61,7 @@ p {
     text-align: center;
     font-family: var(--paragraph-font);
 }
-img {
+header img {
   max-width: 100px;
   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
 
@@ -166,7 +166,7 @@ li :hover {
 
 .herolabel {
 	position: absolute;
-	top: 30px;
+	top: 330px;
 	left: 30px;
 	background: radial-gradient(#fff, #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);
