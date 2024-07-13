@@ -170,3 +170,31 @@ nav {
     max-width: 150px;
     padding-right: 50px;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column on mobile */
+    gap: 20px;
+}
+
+.sidebar {
+    background-color: var(--accent3-color);
+    padding: 20px;
+    border-radius: .5em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: .5em;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
