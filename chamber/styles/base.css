@@ -198,3 +198,9 @@ main {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    color: var(--accent2-color);
+    font-size: 0.9rem;
+}
