@@ -110,6 +110,8 @@
     main {
         grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4, gallery takes 3/4 */
     }
-   
+    .navigation li {
+        display: block; /* Show navigation items in larger view */
+    }
    
 }
