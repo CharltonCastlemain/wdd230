@@ -204,3 +204,12 @@ figcaption {
     color: var(--accent2-color);
     font-size: 0.9rem;
 }
+div h1 {
+    color: var(--primary-color);
+}
+.sidebar ul, .sidebar h3 {
+    color: var(--secondary-color);
+}
+#discover-p {
+    color: var(--accent2-color);
+}

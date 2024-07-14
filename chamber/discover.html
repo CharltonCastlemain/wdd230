@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.webp" alt="Charlton Castlemain">
+        <img src="images/fwc.jpg" alt="Charlton Castlemain">
         <span>Charlton Castlemain</span>
     </header>
     <a id="menu" href="#"></a>
@@ -41,7 +41,7 @@
 
     <main>
         <div class="sidebar">
-            <h2>Visitor Info</h2>
+            <h1>Discover Fort Worth</h1>
             <p id="visitMessage"></p>
             <h3>Events</h3>
             <ul>
@@ -50,7 +50,6 @@
                 <li>Sundance Square Music Festival</li>
             </ul>
         </div>
-
         <div class="gallery">
             <figure>
                 <img src="images/cattle-drive.webp" alt="Cattle Drive" loading="lazy">
@@ -80,32 +79,15 @@
             </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Charlton Castlemain, MAGA Country</p>
+        <p id="discover-p">&copy; <span id="currentYear"></span> Charlton Castlemain, MAGA Country</p>
         <p id="lastModified"></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.123456789012!2d-97.352392!3d32.977883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c268db9f9a76d%3A0x5e5708a5f429b8e5!2sHaslet%2C%20TX%2076108%2C%20USA!5e0!3m2!1sen!2suk!4v1626478912345!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.123456789012!2d-97.352392!3d32.977883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c268db9f9a76d%3A0x5e5708a5f429b8e5!2sFort%20Worth%2C%20TX%2C%20USA!5e0!3m2!1sen!2suk!4v1626478912345!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/pageVisitsCounter.js"></script>
-    <script>
-        // JavaScript for visit messages
-        const lastVisit = localStorage.getItem('lastVisit');
-        const now = Date.now();
-        localStorage.setItem('lastVisit', now);
-        const message = document.getElementById('visitMessage');
-
-        if (!lastVisit) {
-            message.textContent = "Welcome! Let us know if you have any questions.";
-        } else {
-            const diffTime = Math.abs(now - lastVisit);
-            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-            if (diffDays < 1) {
-                message.textContent = "Back so soon! Awesome!";
-            } else {
-                message.textContent = `You last visited ${diffDays} day${diffDays > 1 ? 's' : ''} ago.`;
-            }
-        }
-    </script></body>
+    <script src="scripts/visitMessage.js"> </script>
+</body>
 </html>
