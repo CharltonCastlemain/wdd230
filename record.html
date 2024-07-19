@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <meta name="description" content="Form Group Record">
+    <meta name="author" content="Charlton Castlemain">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/record.css">    
+</head>
+<body>
+    <div class="container">
+        <h1>Form Submission Successful</h1>
+        <p>Thank you for submitting your information.</p>
+        <p>We have received your form. You will be contacted shortly.</p>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Charlton Castlemain, MAGA Country</p>
+    </footer>
+    <script>
+        // Dynamically set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

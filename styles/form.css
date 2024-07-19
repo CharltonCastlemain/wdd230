@@ -199,6 +199,7 @@ iframe {
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
+
 }
 
 .wf1 legend {
@@ -262,7 +263,7 @@ iframe {
 	color: red;
 }
 
-#keyphrase:invalid {
+#confirm_password:invalid {
 	background-color: #fff0f3;
 	animation: shaketext 500ms;
 }

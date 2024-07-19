@@ -25,22 +25,20 @@
     </nav>
 
     <main>
-        <div id="formessage"></div>
+        <div id="formmessage"></div>
         <form action="record.html" method="get" class="wf1">
-            <div id="formessage"></div>
             <fieldset>
                 <legend>Web Lab - Form Validation</legend>
-                    <label for="username">Username:<input type="text" id="username" name="username" required></label>
-                    <label for="password">Password:<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
-                    <label for="password">Confirm Password:<input type="password" id="confirm_password" name="confirm_password" pattern="[A-Za-z0-9]{8,}" required></label>
-                    <label for="email">Email:<input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address" required></label>
-                    <label for="rating">Page Rating:<input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="ratingOutput.value = rating.value"><output id="ratingOutput">5</output></label>
-                    
+                <label for="username">Username:<input type="text" id="username" name="username" required></label>
+                <label for="password">Password:<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
+                <label for="confirm_password">Confirm Password:<input type="password" id="confirm_password" name="confirm_password" pattern="[A-Za-z0-9]{8,}" required></label>
+                <label for="email">Email:<input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+                <label for="rating">Page Rating:<input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="ratingOutput.value = rating.value"><output id="ratingOutput">5</output></label>
             </fieldset>
             <input type="submit" value="Create My Account">
         </form>
     </main>
-
+    
     <footer>
         <p>&copy; <span id="currentYear"></span> Charlton Castlemain, MAGA Country</p>
         <p id="lastModified"></p>
