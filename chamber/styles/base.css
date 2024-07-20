@@ -213,3 +213,20 @@ div h1 {
 #discover-p {
     color: var(--accent2-color);
 }
+
+/*------------FORM DESIGN FOR JOIN PAGE ---------------------*/
+
+.cf1 {
+    display: block;
+    width: 100%;
+} 
+.error {
+    border: 2px solid red;
+}
+
+.error-message {
+    display: block;
+    font-size: 0.8em;
+    color: red;
+    margin-top: 4px;
+}

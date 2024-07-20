@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
-    <meta name="description" content="Chamber Page">
+    <title>Chamber of Commerce - Membership Form</title>
+    <meta name="description" content="Membership Form">
     <meta name="author" content="Charlton Castlemain">
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="City of Fort Worth">
@@ -28,12 +28,54 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Site Plan</a></li>
-                <li><a href="#">Form</a></li>
+                <li><a href="index.html">Form</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        
+        <form action="thankyou.html" method="get" class="cf1">
+            <fieldset>
+                <legend>Membership Application</legend>
+                <label for="firstName">Applicant's First Name: *<input type="text" id="firstName" name="firstName" required></label>
+
+                <label for="lastName">Applicant's Last Name: *<input type="text" id="lastName" name="lastName" required></label>
+
+                <label for="title">Applicant's Title/Position: *<input type="text" id="title" name="title" pattern="[A-Za-z -]{7,}" required></label>
+                <small>Minimum 7 characters. Only alphabets, hyphens, and spaces.</small>
+
+                <label for="email">Email Address: *<input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+
+                <label for="phone">Mobile Phone Number: *<input type="tel" id="phone" name="phone" required></label>
+
+                <label for="businessName">Business/Organization Name: *<input type="text" id="businessName" name="businessName" required></label>
+
+                <label for="membershipLevel">Membership Level: *
+                    <select id="membershipLevel" name="membershipLevel" required>
+                        <option value="NP">NP Membership (Non-Profit, No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="businessDescription">Business/Organization Description:<textarea id="businessDescription" name="businessDescription"></textarea></label>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                
+            </fieldset>
+            <input type="submit" value="Become a New Member!">
+        </form>
+
+        <div class="membership-benefits">
+            <h3>Membership Benefits</h3>
+            <ul>
+                <li>NP Membership: No fee for non-profit organizations.</li>
+                <li>Bronze Membership: Basic benefits.</li>
+                <li>Silver Membership: Enhanced benefits.</li>
+                <li>Gold Membership: Premium benefits.</li>
+            </ul>
+        </div>
     </main>
     <footer class="footer">
         <div>Contact Information</div>
@@ -42,8 +84,11 @@
         <div>WDD 230 Project</div>
         <div id="lastModified"></div> <!-- Dynamically set last modified date -->
     </footer>
-
-    <script>document.getElementById('lastModified').textContent = document.lastModified;</script>
+    <script src="join.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
     <script src="scripts/hamburgerMenu.js"></script>
 </body>
 </html>
