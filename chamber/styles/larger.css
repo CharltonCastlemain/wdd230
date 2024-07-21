@@ -114,4 +114,30 @@
         display: block; /* Show navigation items in larger view */
     }
    
+
+
+
+    main#join {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 20px; /* Adjust the gap between columns */
+        justify-content: center; /* Center the grid items horizontally */
+        padding: 0 20px; /* Add padding to the sides */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    main#join .membership-benefits {
+        grid-column: 2 / span 1; /* Membership benefits take the first column */
+        justify-self: center;
+    }
+
+    main#join .cf1 {
+        grid-column: 1 / span 1; /* Form takes the second column */
+    }
+
+    main#join .cf1 input[type="submit"] {
+        width: 90%; /* Adjust submit button width */
+        max-width: 400px;
+        margin: 20px 5% 20px 15%; /* Center align the submit button */
+    }
 }
