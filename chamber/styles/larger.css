@@ -1,3 +1,28 @@
+
+:root {
+    --primary-color: #6E2711;
+    --secondary-color: #363020;
+    --accent1-color: #5B8266;
+    --accent2-color: #AEF6C7;
+    --accent3-color: #E3D985;
+
+    --heading-font: 'Grenze Gotisch', serif;
+    --paragraph-font: 'Playfair Display', sans-serif;
+ 
+    --nav-background-color:var(--accent1-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-link-color:#E1E6E1;
+    --nav-hover-background-color:#253237;
+
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 650px) {
     
     #menu {
@@ -56,7 +81,7 @@
     }
 
     nav a:hover {
-        color: var(--primary-color);
+        color: var(--accent1-color);
     }
 
     .hero {
