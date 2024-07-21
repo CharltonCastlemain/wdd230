@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Regular expression for title validation (7 or more alphabets, hyphens, and spaces)
         const titleRegex = /^[A-Za-z -]{7,}$/;
 
+        // Regular expression for phone number validation (10 digits)
+        const phoneRegex = /^\d{10}$/;
+
         // Validate each field
         let isValid = true;
 
@@ -47,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(email);
         }
 
-        if (!phone.value.trim()) {
-            setError(phone, 'Please input this field with the correct format');
+        // Validate the phone number field
+        if (!phone.value.trim() || !phoneRegex.test(phone.value.trim())) {
+            setError(phone, 'Please enter a valid 10-digit phone number.');
             isValid = false;
         } else {
             clearError(phone);
