@@ -1,0 +1,40 @@
+/* CSS for the card grid layout */
+:root {
+    background-color: rgba(200, 160, 220, 0.1); /* Faint purple background */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align content */
+    margin-bottom: 20px; /* Add margin to separate cards */
+    font-family:cursive;
+
+  }
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 4 columns with equal width */
+    gap: 20px; /* Gap between cards */
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding is included in width */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures image does not create extra spacing */
+  }
+
+
+  
+  .prophet-card h2 {
+    margin-bottom: 10px; /* Add space below the h2 */
+  }
+  
+  .prophet-card img {
+    margin-top: 10px; /* Add space above the image */
+  }
+
