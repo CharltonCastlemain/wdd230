@@ -35,12 +35,13 @@ async function apiFetch() {
 
 // Function to display results in the HTML document
 function displayResults(data) {
-    currentTemp.innerHTML = '${data.main.temp} &deg;F';
-    const iconsrc = 'https://openweathermap.org/current#Geo'
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
+    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+    const desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconUrl);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = '${desc}';
+    captionDesc.textContent = desc;
 }
 
 // Call the apiFetch() function to initiate data retrieval and display
