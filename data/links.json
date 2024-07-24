@@ -3,85 +3,108 @@
         {
             "week": "Week 1",
             "links": [
-            {
-                "url":"week01/holygrail.html",
-                "title":"HG Layout"
-            },
-            {
-                "url":"week01/media-query.html",
-                "title":"mQueries"
-            }
-            ]
-        },
-    "weeks": [
-        {
-            "week": "Week 1",
-            "links": [
-            {
-                "url":"week01/holygrail.html",
-                "title":"HG Layout"
-            },
-            {
-                "url":"week01/media-query.html",
-                "title":"mQueries"
-            }
-            ]
-        },
-    "weeks": [
-        {
-            "week": "Week 1",
-            "links": [
-            {
-                "url":"week01/holygrail.html",
-                "title":"HG Layout"
-            },
-            {
-                "url":"week01/media-query.html",
-                "title":"mQueries"
-            }
-            ]
-        },
-    "weeks": [
-        {
-            "week": "Week 1",
-            "links": [
-            {
-                "url":"week01/holygrail.html",
-                "title":"HG Layout"
-            },
-            {
-                "url":"week01/media-query.html",
-                "title":"mQueries"
-            }
-            ]
-        },
-    "weeks": [
-        {
-            "week": "Week 1",
-            "links": [
-            {
-                "url":"week01/holygrail.html",
-                "title":"HG Layout"
-            },
-            {
-                "url":"week01/media-query.html",
-                "title":"mQueries"
-            }
-            ]
-        },
-        "weeks": [
-            {
-                "week": "Week 1",
-                "links": [
                 {
-                    "url":"week01/holygrail.html",
-                    "title":"HG Layout"
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
                 },
                 {
-                    "url":"week01/media-query.html",
-                    "title":"mQueries"
+                    "url": "week01/media-query.html",
+                    "title": "mQueries"
+                },
+                {
+                    "url": "scripts/getDates.js",
+                    "title": "JS Pen"
                 }
-                ]
-            }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/blazzard-jason/pen/gmGxaj/",
+                    "title": "Hamburger Button"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM 2.0"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/blazzard-jason/pen/PoaQgXJ",
+                    "title": "Psuedo-class Fun"
+                },
+                {
+                    "url": "images/combinators.PNG",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "week04/index.html",
+                    "title": "Form Practice"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/blazzard-jason/pen/LYjLRqN",
+                    "title": "Pseudo-element"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "Json"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API - Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
         }
-    
+    ]
+}

@@ -188,3 +188,35 @@ iframe {
   height: 250px;
   width: 350px;
 }
+
+/*-----------------Weather Card CSS --------------*/
+
+
+.card2 p {
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
+
+.card2 figure {
+  display: flex;
+  align-items: center; 
+}
+
+.card2 img {
+  max-width: 100px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.card2 figcaption {
+  font-family: var(--paragraph-font);
+  font-size: 1rem;
+  margin: 0; 
+  align-self: baseline;
+}
+
+.card2 #current-temp {
+  font-family: var(--paragraph-font);
+  font-size: 1rem; 
+  margin-left: 5px; 
+}
