@@ -36,6 +36,7 @@ main {
     list-style-type: none;
     padding-left: 0;
     font-family: var(--paragraph-font);
+    font-size: .4rem;
 }
 header, footer {
     background-color: var(--primary-color);
@@ -99,8 +100,12 @@ nav a {
 nav :hover {
   color: var(--primary-color);
 }
-li :hover {
+nav li :hover {
   background-color: var(--accent3-color);
+}
+
+ .card li {
+  text-align: auto;
 }
 /*Hamburger Menu */
 #menu {
