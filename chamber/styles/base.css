@@ -170,9 +170,9 @@ nav {
     max-width: 150px;
     padding-right: 50px;
 }
-main {
+.disc {
     display: grid;
-    grid-template-columns: 1fr; /* Default to single column on mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
 }
 
@@ -269,4 +269,51 @@ div h1 {
 }
 .membership-benefits h3{
     color: var(--accent3-color);
+}
+
+/*---------------Directory CSS---------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 100px; 
+}
+
+.grid .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--accent1-color);
+    padding: 20px;
+    background-color: var(--accent3-color);
+    height: 100%;
+    border-radius: 5%;
+    text-align: center;
+}
+
+/* List layout */
+.list .member {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--accent2-color);
+}
+
+.list .member-image {
+    display: none;
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.list .member-details {
+    margin-left: 20px;
+}
+
+/* Flexbox settings for images */
+.member .member-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
 }

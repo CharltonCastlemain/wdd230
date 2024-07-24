@@ -16,42 +16,49 @@ async function getMembers() {
 
 function displayMembers(members) {
     const membersContainer = document.getElementById('members-container');
+    membersContainer.innerHTML = ''; // Clear previous content
 
     members.forEach((member) => {
         const section = document.createElement('section');
         section.classList.add('member');
 
         const img = document.createElement('img');
-        img.src = baseURL + 'chamber/images/' + member.image;
+        img.src = `${baseURL}chamber/images/${member.image}`;
         img.alt = member.name;
+        img.classList.add('member-image');
         section.appendChild(img);
+
+        const div = document.createElement('div');
+        div.classList.add('member-details');
 
         const h3 = document.createElement('h3');
         h3.textContent = member.name;
-        section.appendChild(h3);
+        div.appendChild(h3);
 
         const p1 = document.createElement('p');
         p1.textContent = member.address;
-        section.appendChild(p1);
+        div.appendChild(p1);
 
         const p2 = document.createElement('p');
         p2.textContent = 'Phone: ' + member.phone;
-        section.appendChild(p2);
+        div.appendChild(p2);
 
         const p3 = document.createElement('p');
         const websiteLink = document.createElement('a');
         websiteLink.href = member.website;
         websiteLink.textContent = 'Website';
         p3.appendChild(websiteLink);
-        section.appendChild(p3);
+        div.appendChild(p3);
 
         const p4 = document.createElement('p');
         p4.textContent = 'Membership Level: ' + member.membershipLevel;
-        section.appendChild(p4);
+        div.appendChild(p4);
 
         const p5 = document.createElement('p');
         p5.textContent = member.otherInfo;
-        section.appendChild(p5);
+        div.appendChild(p5);
+
+        section.appendChild(div);
 
         membersContainer.appendChild(section);
     });
@@ -59,18 +66,19 @@ function displayMembers(members) {
 
 getMembers();
 
-// Event listeners for grid and list buttons
-document.getElementById('grid').addEventListener('click', showGrid);
-document.getElementById('list').addEventListener('click', showList);
+// Toggle between grid and list layout
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
+const membersContainer = document.getElementById('members-container');
 
-function showGrid() {
-    const membersContainer = document.getElementById('members-container');
+gridButton.addEventListener('click', function() {
     membersContainer.classList.remove('list');
     membersContainer.classList.add('grid');
-}
+    document.querySelectorAll('.member-image').forEach(img => img.style.display = 'block');
+});
 
-function showList() {
-    const membersContainer = document.getElementById('members-container');
+listButton.addEventListener('click', function() {
     membersContainer.classList.remove('grid');
     membersContainer.classList.add('list');
-}
+    document.querySelectorAll('.member-image').forEach(img => img.style.display = 'none');
+});
