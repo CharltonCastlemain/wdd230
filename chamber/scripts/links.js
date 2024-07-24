@@ -59,3 +59,18 @@ function displayMembers(members) {
 
 getMembers();
 
+// Event listeners for grid and list buttons
+document.getElementById('grid').addEventListener('click', showGrid);
+document.getElementById('list').addEventListener('click', showList);
+
+function showGrid() {
+    const membersContainer = document.getElementById('members-container');
+    membersContainer.classList.remove('list');
+    membersContainer.classList.add('grid');
+}
+
+function showList() {
+    const membersContainer = document.getElementById('members-container');
+    membersContainer.classList.remove('grid');
+    membersContainer.classList.add('list');
+}
