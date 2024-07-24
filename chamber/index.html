@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="styles/base.css"> 
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-
 </head>
 <body>
     <header>
@@ -32,6 +31,9 @@
             </ul>
         </nav>
     </header>
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m. <span id="close-banner" style="cursor:pointer;">❌</span></p>
+    </div>
     <div class="hero-image">
         <img src="images/hero-image.jpg" id="hero-img"  alt="FT Worth Chamber of Commerce">
         <section class="hero">
@@ -64,23 +66,16 @@
 
         <section class="weather">
             <h2>Weather</h2>
-            <div class="weather-card">
+            <div id="weather-card" class="weather-card">
                 <h3>Fort Worth Weather Forecast</h3>
-                <p><strong>Today:</strong> Partly cloudy, high of 85°F</p>
-                <p><strong>Tomorrow:</strong> Sunny, high of 88°F</p>
-                <p>Stay updated with local weather conditions to plan your business activities.</p>
+                <!-- Weather data will be inserted here -->
             </div>
         </section>
 
         <section class="spotlights">
             <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>Local Business Highlight: Smith's Hardware</h3>
-                <p>Smith's Hardware has been serving the community for over 30 years, offering a wide range of tools and home improvement products.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Startup Spotlight: Tech Innovations Inc.</h3>
-                <p>Tech Innovations Inc. specializes in developing cutting-edge software solutions for businesses worldwide.</p>
+            <div id="spotlights-container" class="spotlights-container">
+                <!-- Spotlight ads will be inserted here -->
             </div>
         </section>
     </section>
@@ -94,5 +89,8 @@
 
     <script>document.getElementById('lastModified').textContent = document.lastModified;</script>
     <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

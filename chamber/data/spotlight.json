@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Fort Worth BBQ House",
+        "description": "Fort Worth BBQ House offers the best smoked meats and traditional Texas barbecue dishes in the city.",
+        "membership": "gold"
+    },
+    {
+        "name": "Cowtown Boots",
+        "description": "Cowtown Boots has been providing high-quality, handcrafted cowboy boots for over 50 years.",
+        "membership": "silver"
+    },
+    {
+        "name": "Stockyards Brewery",
+        "description": "Stockyards Brewery is known for its locally brewed craft beers, inspired by the rich history of Fort Worth.",
+        "membership": "silver"
+    },
+    {
+        "name": "Western Wear Outfitters",
+        "description": "Western Wear Outfitters offers a wide selection of western clothing, hats, and accessories for the whole family.",
+        "membership": "gold"
+    },
+    {
+        "name": "Longhorn Café",
+        "description": "Longhorn Café serves delicious Tex-Mex cuisine in a cozy, family-friendly atmosphere.",
+        "membership": "silver"
+    },
+    {
+        "name": "Fort Worth Art Gallery",
+        "description": "Fort Worth Art Gallery showcases works from local artists and hosts monthly exhibitions and art events.",
+        "membership": "gold"
+    }
+]

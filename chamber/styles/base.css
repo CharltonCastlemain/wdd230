@@ -317,3 +317,12 @@ div h1 {
     height: auto;
     margin-bottom: 0;
 }
+
+
+/*--------------Touch-Up CSS ------------*/
+
+.banner {
+    text-align: center;
+    background-color: var(--accent2-color);
+    border-style: ridge;
+}
