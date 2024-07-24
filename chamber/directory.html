@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="Directory Page">
+    <meta name="author" content="Charlton Castlemain">
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="City of Fort Worth -- Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.tripsavvy.com/thmb/qqS7PZlMAYRgwgx8jCv-oP4Q6Cs=/3936x2624/filters:fill(auto,1)/TAM_0415-baaa0183446541aab8a0768776369a0e.jpg">
+    <meta property="og:url" content="https://charltoncastlemain.github.io/wdd230/">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css"> 
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+    <header>
+        <img src="images/fwc.jpg" alt="Fort Worth Chamber" id="logo">
+        <span>Fort Worth Chamber of Commerce</span>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+        <hr>
+        <article id="members-container" class="grid">
+        </article>
+    </main>
+    <footer class="footer">
+        <div>Contact Information</div>
+        <div>Additional development information:</div>
+        <div>Charlton Castlemain</div>
+        <div>WDD 230 Project</div>
+        <div id="lastModified"></div> <!-- Dynamically set last modified date -->
+    </footer>
+
+    <script>document.getElementById('lastModified').textContent = document.lastModified;</script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+</html>

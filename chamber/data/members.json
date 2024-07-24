@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "Fort Worth Zoo",
+            "address": "1989 Colonial Pkwy, Fort Worth, TX 76110",
+            "phone": "(817) 759-7555",
+            "website": "https://www.fortworthzoo.org/",
+            "image": "fort-worth-zoo.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "Ranked as one of the top zoos in the nation."
+        },
+        {
+            "name": "Kimbell Art Museum",
+            "address": "3333 Camp Bowie Blvd, Fort Worth, TX 76107",
+            "phone": "(817) 332-8451",
+            "website": "https://www.kimbellart.org/",
+            "image": "kimbell-art-museum.jpg",
+            "membershipLevel": "Silver",
+            "otherInfo": "Home to a small but superb collection of European masterpieces."
+        },
+        {
+            "name": "Billy Bob's Texas",
+            "address": "2520 Rodeo Plaza, Fort Worth, TX 76164",
+            "phone": "(817) 624-7117",
+            "website": "https://billybobstexas.com/",
+            "image": "billy-bobs-texas.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "World's largest honky-tonk."
+        },
+        {
+            "name": "Fort Worth Stockyards",
+            "address": "130 E Exchange Ave, Fort Worth, TX 76164",
+            "phone": "(817) 624-4741",
+            "website": "https://www.fortworthstockyards.org/",
+            "image": "fort-worth-stockyards.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "National Historic District."
+        },
+        {
+            "name": "Joe T. Garcia's",
+            "address": "2201 N Commerce St, Fort Worth, TX 76164",
+            "phone": "(817) 626-4356",
+            "website": "https://joets.com/",
+            "image": "joe-t-garcias.jpg",
+            "membershipLevel": "Silver",
+            "otherInfo": "Legendary Mexican restaurant."
+        },
+        {
+            "name": "Sundance Square",
+            "address": "201 Main St, Fort Worth, TX 76102",
+            "phone": "(817) 255-5700",
+            "website": "https://sundancesquare.com/",
+            "image": "sundance-square.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "Downtown Fort Worth's premier entertainment district."
+        },
+        {
+            "name": "Riscky's Barbeque",
+            "address": "300 Main St, Fort Worth, TX 76102",
+            "phone": "(817) 877-3306",
+            "website": "https://www.risckys.com/",
+            "image": "risckys-barbeque.jpg",
+            "membershipLevel": "Silver",
+            "otherInfo": "Authentic Texas barbeque since 1927."
+        },
+        {
+            "name": "Fort Worth Botanic Garden",
+            "address": "3220 Botanic Garden Blvd, Fort Worth, TX 76107",
+            "phone": "(817) 392-5510",
+            "website": "https://fwbg.org/",
+            "image": "fort-worth-botanic-garden.jpg",
+            "membershipLevel": "Gold",
+            "otherInfo": "Oldest botanic garden in Texas."
+        },
+        {
+            "name": "Modern Art Museum of Fort Worth",
+            "address": "3200 Darnell St, Fort Worth, TX 76107",
+            "phone": "(817) 738-9215",
+            "website": "https://www.themodern.org/",
+            "image": "modern-art-museum.jpg",
+            "membershipLevel": "Silver",
+            "otherInfo": "Contemporary art museum."
+        }
+    ]
+}
